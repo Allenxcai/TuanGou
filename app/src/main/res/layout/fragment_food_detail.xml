@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.FoodDetailFragment">
+
+
+    <!--主页头-->
+    <LinearLayout
+        android:id="@+id/homepage_menu2_heard"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center_vertical"
+                android:background="@mipmap/back" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/homepage_menu2_heard_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                tools:text="松仁大虾" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <!--商品图片&团购价-->
+    <RelativeLayout
+        android:id="@+id/homepage_menu2_price"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@+id/homepage_menu2_heard">
+
+        <ImageView
+            android:id="@+id/homepage_menu2_iv_item_image"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:background="@drawable/find_hot_jiangnan" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/homepage_menu2_iv_item_image">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="2dp"
+                        android:background="@color/white"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/colorPrimary"
+                        android:text=" ¥ " />
+
+                    <TextView
+                        android:id="@+id/homepage_menu2_tv_item_price1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/colorPrimary"
+                        tools:text="27.8" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/darkgrey"
+                        android:text=" 团购价:   " />
+
+                    <TextView
+                        android:id="@+id/homepage_menu2_tv_item_price2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/darkgrey"
+                        tools:text="22" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/homepage_menu2_tv_item_price3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/darkorange"
+                tools:text="19.98" />
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@color/darkorange"
+                android:text=" 拿下" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/homepage_menu2_price"
+        android:orientation="vertical">
+        <!--评分-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <RatingBar
+                android:id="@+id/rc_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:numStars="5"
+                android:rating="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:text="@string/Rating"
+                android:textColor="@color/darkgrey"
+                android:textSize="28sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_margin"
+            android:background="@color/darkgrey">
+
+        </View>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="商品详细信息"
+            android:textSize="28sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_margin"
+            android:background="@color/darkgrey">
+
+        </View>
+
+        <TextView
+            android:id="@+id/homepage_menu2_tv_item_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            tools:text="商品详细信息：松仁大虾松仁大虾松仁大虾松仁大虾松仁大虾松仁大虾松仁大虾松仁大虾松仁大虾松仁大虾" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

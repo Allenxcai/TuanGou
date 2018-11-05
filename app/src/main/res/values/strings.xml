@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">TuanGou</string>
+    <string name="title_activity_login">用户登录</string>
+    <string name="title_activity_register">用户注册</string>
+    <!-- Strings related to login -->
+    <string name="prompt_login_username">请输入用户名/手机/邮箱</string>
+    <string name="prompt_login_password">请输入登录密码</string>
+    <string name="action_sign_in">登录</string>
+    <string name="action_register">注册</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="free_register">免费注册</string>
+    <string name="findback_password">找回密码</string>
+    <string name="user">用户</string>
+    <string name="shopping">购物</string>
+    <string name="homepage">首页</string>
+    <string name="homepage_menu2_title">--大家都在团--</string>
+    <string name="Rating">评分</string>
+    <string name="WrongUser">用户名或密码输入错误</string>
+
+    <!-- 字符串数组 -->
+    <string-array name="HomePage_GridView_Items">
+        <item>飞机</item>
+        <item>车票</item>
+        <item>汽车</item>
+        <item>蛋糕</item>
+        <item>美食</item>
+        <item>手表</item>
+        <item>电脑</item>
+        <item>手机</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>
